@@ -1,0 +1,21 @@
+.title {
+}
+.title__text {
+	position: relative;
+	font-size: 1.75rem;
+	font-weight: 700;
+	line-height: 142.857%;
+	letter-spacing: -0.6px;
+}
+
+.title__text::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -16px;
+	width: 4px;
+	height: 100%;
+	background-color: var(--color-dark-green);
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+}

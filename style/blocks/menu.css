@@ -1,0 +1,27 @@
+.menu {
+	display: flex;
+	align-items: center;
+}
+.menu__list {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+.menu__list:first-child {
+	display: none;
+	padding-right: 20px;
+}
+.menu__list:last-child {
+	padding-left: 20px;
+}
+
+.menu__item {
+}
+.menu__btn {
+}
+
+@media (min-width: 768px) {
+	.menu__list:first-child {
+		display: flex;
+	}
+}

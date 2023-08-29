@@ -1,0 +1,27 @@
+.service {
+	padding-top: 24px;
+}
+.service__list.buttons-list {
+	display: none;
+	align-items: center;
+	gap: 32px;
+}
+.service__list .buttons-list__btn {
+	gap: 9px;
+}
+.service__title {
+	padding-bottom: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.service__tabs {
+}
+.service__info-content {
+}
+
+@media (min-width: 1120px) {
+	.service__list.buttons-list {
+		display: flex;
+	}
+}
