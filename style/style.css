@@ -35,17 +35,17 @@ main {
 	padding-top: 88px;
 }
 
-._container {
+.container {
 	max-width: 1120px;
 	margin: 0 auto;
 	padding: 0 16px;
 }
 
-._line {
+.line {
 	position: relative;
 }
 
-._line::before {
+.line::before {
 	content: '';
 	position: absolute;
 	display: block;

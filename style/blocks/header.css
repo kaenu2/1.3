@@ -28,7 +28,7 @@
 .header__logo .logo__img {
 	max-width: 97px;
 }
-.header__logo._line::before {
+.header__logo.line::before {
 	display: none;
 }
 .header__menu {
@@ -38,7 +38,7 @@
 	.header__logo {
 		padding-left: 20px;
 	}
-	.header__logo._line::before {
+	.header__logo.line::before {
 		display: block;
 	}
 	.header__burger {

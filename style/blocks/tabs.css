@@ -1,6 +1,7 @@
 .tabs {
 }
 .tabs__list {
+	position: relative;
 	display: flex;
 	gap: 15px;
 	row-gap: 15px;
@@ -8,10 +9,28 @@
 	padding-bottom: 24px;
 	-ms-overflow-style: none;
 	scrollbar-width: none;
+	margin-right: -16px;
+}
+.tabs__list::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 24px;
+	height: 100%;
+	background-image: linear-gradient(
+		270deg,
+		#f8f8f8 16.84%,
+		rgba(248, 248, 248, 0) 100%
+	);
 }
 @media (min-width: 1120px) {
 	.tabs__list {
 		flex-wrap: wrap;
+		margin-right: 0;
+	}
+	.tabs__list::after {
+		display: none;
 	}
 }
 .tabs__list::-webkit-scrollbar {
@@ -39,7 +58,7 @@
 .tabs__button:active {
 	filter: brightness(0.6);
 }
-.tabs__button._active {
+.tabs__button.active {
 	background: var(--color-white);
 	border: 2px solid var(--color-green);
 }
