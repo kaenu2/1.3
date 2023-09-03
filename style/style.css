@@ -1,15 +1,15 @@
 @import url('./base/nullstyle.css');
 @import url('./base/fonts.css');
 
-@import url('./blocks/header.css');
-@import url('./blocks/active-list.css');
-@import url('./blocks/menu.css');
-@import url('./blocks/logo.css');
+@import url('./blocks/header/header.css');
+@import url('./blocks/header/menu.css');
 
-@import url('./blocks/service.css');
+@import url('./blocks/service/service.css');
+@import url('./blocks/service/tabs.css');
+@import url('./blocks/service/info-content.css');
+
+@import url('./blocks/logo.css');
 @import url('./blocks/title.css');
-@import url('./blocks/tabs.css');
-@import url('./blocks/info-content.css');
 
 :root {
 	--color-white: #ffffff;
@@ -57,7 +57,9 @@ main {
 	background-color: var(--color-light-gray);
 	border-radius: 15px;
 }
-
+.burger-icon::after {
+	background: url('../../img/icons/burger.svg') no-repeat;
+}
 .btn-icon {
 	display: flex;
 	align-items: center;
